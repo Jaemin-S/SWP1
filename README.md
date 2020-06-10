@@ -1,4 +1,4 @@
 20203093
-Jaemin-S
+Jaemin Sim
 Kookmin Univ, SW
     2020-06-10
