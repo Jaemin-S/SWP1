@@ -11,8 +11,10 @@ def application(environ, start_response):
                 a, b = int(a), int(b)
                 x = a + b
                 y = a * b
-	x, y = str(x), str(y)
-        response_body = html + "(1) a + b = " + x + "\n(2) a * b = " + y
+		x, y = str(x), str(y)
+        	response_body = html + "(1) a + b = " + x + "\n(2) a * b = " + y
+	else:
+		response_body = html + "Please enter an integer value for both a and b. OUTPUT : 1) a + b, 2) a * b"
         start_response('200 OK', [
                 ('Content-Type', 'text/html'),
                 ('Content-Length', str(len(response_body)))
